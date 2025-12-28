@@ -1,0 +1,11 @@
+<Configuration>
+    <MappedFolders>
+        <MappedFolder>
+            <HostFolder>C:\SandboxShare</HostFolder>
+            <SandboxFolder>C:\SandboxShare</SandboxFolder>
+        </MappedFolder>
+    </MappedFolders>
+    <LogonCommand>
+        <Command>powershell -ExecutionPolicy Bypass -File C:\SandboxShare\FilterCalendarResponses.ps1 -FilterAccept -FilterDecline -Action MoveToFolder -TargetFolder "test1@localhost:\Calendar Responses" -Verbose -UseMock</Command>
+    </LogonCommand>
+</Configuration>            
